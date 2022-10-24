@@ -21,7 +21,7 @@ CREATE TABLE City(
 );
 
 insert into City(name) values ('Челябинск');
-insert into City(name) values ('Екатерибург');
+insert into City(name) values ('Екатеринбург');
 select * from City;
 
 CREATE TABLE Library(
