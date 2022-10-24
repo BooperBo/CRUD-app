@@ -6,32 +6,29 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import ru.naumen.course.services.CitiesService;
 import ru.naumen.course.services.LibraryService;
 
 @Controller
-@RequestMapping("/cities")
-public class CitiesController {
+@RequestMapping("/libraries")
+public class LibraryControllers {
 
-    private final CitiesService citiesService;
     private final LibraryService libraryService;
 
     @Autowired
-    public CitiesController(CitiesService citiesService, LibraryService libraryService) {
-        this.citiesService = citiesService;
+    public LibraryControllers(LibraryService libraryService) {
         this.libraryService = libraryService;
     }
 
     @GetMapping()
     public String index(Model model) {
-        model.addAttribute("city", citiesService.findAll());
-        return "cities/index";
+        model.addAttribute("library", libraryService.findAll());
+        return "libraries/index";
     }
 
     @GetMapping("/{id}")
     public String show(@PathVariable("id") int id, Model model) {
-        model.addAttribute("city", citiesService.findOne(id));
-        model.addAttribute("library", libraryService.getLibraryById(id));
-        return "cities/show";
+        model.addAttribute("library", libraryService.findOne(id));
+
+        return "libraries/show";
     }
 }

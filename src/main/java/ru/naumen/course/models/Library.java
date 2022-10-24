@@ -30,4 +30,47 @@ public class Library {
 
     @OneToMany(mappedBy = "ownerLibrary")
     private List<Book> libraryBooks;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public City getOwner() {
+        return owner;
+    }
+
+    public void setOwner(City owner) {
+        this.owner = owner;
+    }
+
+    public List<Book> getLibraryBooks() {
+        return libraryBooks;
+    }
+
+    public void setLibraryBooks(List<Book> libraryBooks) {
+        this.libraryBooks = libraryBooks;
+    }
 }
+
+
+

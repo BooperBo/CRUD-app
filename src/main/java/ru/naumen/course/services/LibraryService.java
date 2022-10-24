@@ -7,6 +7,7 @@ import ru.naumen.course.repositories.LibraryRepository;
 import ru.naumen.course.models.Library;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @Transactional(readOnly = true)
@@ -21,5 +22,14 @@ public class LibraryService {
 
     public List<Library> findAll() {
         return libraryRepository.findAll();
+    }
+
+    public Library findOne(int id) {
+        Optional<Library> foundLibrary = libraryRepository.findById(id);
+        return foundLibrary.orElse(null);
+    }
+
+    public Optional<Library> getLibraryById(int id) {
+        return libraryRepository.findById(id);
     }
 }
