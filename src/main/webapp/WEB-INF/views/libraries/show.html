@@ -5,6 +5,11 @@
     <title>Show</title>
 </head>
 <body>
-<p th:text="${library.getId()}">VALUE</p>
+
+<div th:each="libraryList : ${library}">
+    <a th:href="@{/libraries/owner/{id}(id=${libraryList.getId()})}"></a>
+
+</div>
+
 </body>
 </html>

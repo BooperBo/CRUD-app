@@ -28,7 +28,14 @@ public class LibraryControllers {
     @GetMapping("/{id}")
     public String show(@PathVariable("id") int id, Model model) {
         model.addAttribute("library", libraryService.findOne(id));
+        model.addAttribute("library", libraryService.getLibraryById(id));
 
+        return "libraries/show";
+    }
+
+    @GetMapping("/owner/{id}")
+    public String showByOwnerId(@PathVariable("id") int id, Model model) {
+        model.addAttribute("library", libraryService.findByOwnerId(id));
         return "libraries/show";
     }
 }

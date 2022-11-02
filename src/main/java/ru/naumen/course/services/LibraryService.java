@@ -32,4 +32,8 @@ public class LibraryService {
     public Optional<Library> getLibraryById(int id) {
         return libraryRepository.findById(id);
     }
+
+    public List<Library> findByOwnerId(Integer id) {
+        return libraryRepository.findByOwnerId(id);
+    }
 }
