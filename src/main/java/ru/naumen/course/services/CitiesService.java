@@ -29,7 +29,4 @@ public class CitiesService {
         return foundCity.orElse(null);
     }
 
-    public Optional<City> getCityById(int id) {
-        return citiesRepository.findById(id);
-    }
 }

@@ -44,6 +44,8 @@ insert into Library(name, address, city_id) VALUES ('Библиотека № 17
                                                     'Проспект Ленина 70',2);
 
 select * from library;
+SELECT * FROM person;
+SELECT * FROM book;
 
 drop table Person;
 drop table Book;

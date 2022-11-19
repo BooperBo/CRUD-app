@@ -31,7 +31,7 @@ public class CitiesController {
     @GetMapping("/{id}")
     public String show(@PathVariable("id") int id, Model model) {
         model.addAttribute("city", citiesService.findOne(id));
-        model.addAttribute("library", libraryService.getLibraryById(id));
+        model.addAttribute("library", libraryService.findByOwnerId(id));
         return "cities/show";
     }
 }
