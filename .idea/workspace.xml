@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62344ad9-e9c0-405d-ba4a-5471fd49a485" name="Changes" comment="" />
+    <list default="true" id="741564ca-63e4-4b75-8184-667e3c503e34" name="Changes" comment="/">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/552cfa35-9622-46de-93f9-ff50e5ea873c.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/552cfa35-9622-46de-93f9-ff50e5ea873c/storage_v2/_src_/database/library_db.gs7L3Q.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/552cfa35-9622-46de-93f9-ff50e5ea873c/storage_v2/_src_/database/library_db.gs7L3Q/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/552cfa35-9622-46de-93f9-ff50e5ea873c/storage_v2/_src_/database/library_db.gs7L3Q/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/552cfa35-9622-46de-93f9-ff50e5ea873c/storage_v2/_src_/database/library_db.gs7L3Q/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,21 +37,26 @@
     <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="2HlF6lT5u55kJZE39ocFgKMtNeT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "spring.configuration.checksum": "d3afe68f06984244b2cb9a770d8179bb"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;d3afe68f06984244b2cb9a770d8179bb&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="ProjectLibraryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ProjectLibrary" />
@@ -55,12 +69,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="62344ad9-e9c0-405d-ba4a-5471fd49a485" name="Changes" comment="" />
+      <changelist id="741564ca-63e4-4b75-8184-667e3c503e34" name="Changes" comment="/" />
       <created>1668851590038</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668851590038</updated>
       <workItem from="1668851591659" duration="187000" />
+      <workItem from="1668926993634" duration="1605000" />
     </task>
     <servers />
   </component>
@@ -77,5 +92,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="/" />
+    <option name="LAST_COMMIT_MESSAGE" value="/" />
   </component>
 </project>
