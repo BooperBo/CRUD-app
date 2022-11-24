@@ -54,10 +54,11 @@ public class PeopleService {
     }
 
     @Transactional
-    public void assign(int id, String role) {
+    public void assign(int id, String role, Person updatedPerson) {
         peopleRepository.findById(id).ifPresent(
                 person -> {person.setRole(role);}
         );
+        peopleRepository.save(updatedPerson);
     }
 
     public Optional<Person> getFindByUsername(String username) {

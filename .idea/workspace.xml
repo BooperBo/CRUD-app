@@ -10,12 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d752e3e3-cd1d-4c1b-bb46-57956fd4b691" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/naumen/ProjectLibrary/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/naumen/ProjectLibrary/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/naumen/ProjectLibrary/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/naumen/ProjectLibrary/controllers/PeopleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/naumen/ProjectLibrary/services/PeopleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/naumen/ProjectLibrary/services/PeopleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/people/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/people/show.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/sql/library_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/sql/library_db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/naumen/ProjectLibrary/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/naumen/ProjectLibrary/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/naumen/ProjectLibrary/controllers/PeopleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/naumen/ProjectLibrary/controllers/PeopleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/naumen/ProjectLibrary/services/PeopleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/naumen/ProjectLibrary/services/PeopleService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +247,7 @@
       <workItem from="1669222590856" duration="34000" />
       <workItem from="1669222628923" duration="13000" />
       <workItem from="1669222653696" duration="7437000" />
-      <workItem from="1669271245206" duration="10330000" />
+      <workItem from="1669271245206" duration="12004000" />
     </task>
     <servers />
   </component>

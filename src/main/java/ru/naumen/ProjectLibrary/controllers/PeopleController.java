@@ -86,8 +86,9 @@ public class PeopleController {
     }
 
     @PatchMapping("/{id}/assign")
-    public String assign(@PathVariable("id") int id, @ModelAttribute("role") String role) {
-        peopleService.assign(id, role);
+    public String assign(@ModelAttribute("person") @Valid Person person,
+                         @PathVariable("id") int id, @ModelAttribute("role") String role) {
+        peopleService.assign(id, role, person);
         return "redirect:/people/" + id;
     }
 
