@@ -13,6 +13,8 @@ import ru.naumen.ProjectLibrary.services.PeopleService;
 import ru.naumen.ProjectLibrary.util.PersonValidator;
 
 import javax.validation.Valid;
+import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 @RequestMapping("/people")
@@ -20,6 +22,14 @@ public class PeopleController {
 
     private final PeopleService peopleService;
     private final PersonValidator personValidator;
+
+    static List<String> roles = null;
+
+    static {
+        roles = new ArrayList<>();
+        roles.add("user");
+        roles.add("admin");
+    }
 
     @Autowired
     public PeopleController(PeopleService peopleService, PersonValidator personValidator) {
@@ -37,6 +47,7 @@ public class PeopleController {
     public String show(@PathVariable("id") int id, Model model) {
         model.addAttribute("person", peopleService.findOne(id));
         model.addAttribute("books", peopleService.getBooksByPersonId(id));
+        model.addAttribute("roles", roles);
 
         return "people/show";
     }
@@ -72,6 +83,12 @@ public class PeopleController {
 
         peopleService.update(id, person);
         return "redirect:/people";
+    }
+
+    @PatchMapping("/{id}/assign")
+    public String assign(@PathVariable("id") int id, @ModelAttribute("role") String role) {
+        peopleService.assign(id, role);
+        return "redirect:/people/" + id;
     }
 
     @DeleteMapping("/{id}")

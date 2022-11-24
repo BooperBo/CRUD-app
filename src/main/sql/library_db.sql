@@ -53,7 +53,9 @@ insert into Library(name, address, city_id) VALUES ('Центральная го
 insert into Library(name, address, city_id) VALUES ('Библиотека № 17',
                                                     'Проспект Ленина 70',2);
 
-select * from library;
+INSERT INTO person(username, year_of_birth, password, role) VALUES ('Boris', '1989', '123', 'ROLE_ADMIN');
+
+select * from person;
 
 drop table Person;
 drop table Book;

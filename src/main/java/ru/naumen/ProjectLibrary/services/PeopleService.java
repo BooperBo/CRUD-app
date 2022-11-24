@@ -53,6 +53,13 @@ public class PeopleService {
         peopleRepository.deleteById(id);
     }
 
+    @Transactional
+    public void assign(int id, String role) {
+        peopleRepository.findById(id).ifPresent(
+                person -> {person.setRole(role);}
+        );
+    }
+
     public Optional<Person> getFindByUsername(String username) {
         return peopleRepository.findByUsername(username);
     }
