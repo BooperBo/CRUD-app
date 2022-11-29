@@ -33,9 +33,9 @@
 
 <div th:if="${roles}">
     <form th:method="PATCH" th:action="@{/people/{id}/assign(id=${person.getId()})}">
-        <label for="person">Выберите роль</label>
-        <select th:object="${person}" th:field="*{id}" id="person">
-            <option th:each="role : ${roles}" th:value="${person.getId()}" th:text="${role}">
+        <label for="role">Выберите роль</label>
+        <select th:object="${roles}" id="role">
+            <option th:each="role : ${roles}" th:value="${role}" th:text="${role}">
             </option>
         </select>
         <input type="submit" value="Назначить роль"/>

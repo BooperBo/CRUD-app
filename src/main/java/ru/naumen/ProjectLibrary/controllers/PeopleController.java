@@ -23,14 +23,6 @@ public class PeopleController {
     private final PeopleService peopleService;
     private final PersonValidator personValidator;
 
-    static List<String> roles = null;
-
-    static {
-        roles = new ArrayList<>();
-        roles.add("user");
-        roles.add("admin");
-    }
-
     @Autowired
     public PeopleController(PeopleService peopleService, PersonValidator personValidator) {
         this.peopleService = peopleService;
@@ -47,7 +39,7 @@ public class PeopleController {
     public String show(@PathVariable("id") int id, Model model) {
         model.addAttribute("person", peopleService.findOne(id));
         model.addAttribute("books", peopleService.getBooksByPersonId(id));
-        model.addAttribute("roles", roles);
+        model.addAttribute("roles", new String[] {"USER", "ADMIN"});
 
         return "people/show";
     }
@@ -86,9 +78,8 @@ public class PeopleController {
     }
 
     @PatchMapping("/{id}/assign")
-    public String assign(@ModelAttribute("person") @Valid Person person,
-                         @PathVariable("id") int id, @ModelAttribute("role") String role) {
-        peopleService.assign(id, role, person);
+    public String assign(@PathVariable("id") int id, @ModelAttribute("roles") String role) {
+        peopleService.assign(id, role);
         return "redirect:/people/" + id;
     }
 
