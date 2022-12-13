@@ -16,7 +16,11 @@
 <a href="/cities">Города</a>
 <a href="/books">Список книг</a>
 
+<br/>
 
+<form th:action="@{/logout}" th:method="POST">
+    <input type="submit" value="Logout"/>
+</form>
 
 </body>
 </html>
