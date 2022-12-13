@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>Home</title>
 </head>
 <body>
 
@@ -15,8 +15,10 @@
 <a href="/people">Посетители</a>
 <a href="/cities">Города</a>
 <a href="/books">Список книг</a>
-
-
+<br/>
+<form th:action="@{/logout}" th:method="POST">
+  <input type="submit" value="Logout"/>
+</form>
 
 </body>
 </html>
