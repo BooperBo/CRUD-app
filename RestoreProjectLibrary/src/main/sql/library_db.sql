@@ -47,7 +47,7 @@ insert into Library(name, address, city_id) VALUES ('Центральная би
 insert into Library(name, address, city_id) VALUES ('Библиотека № 32 им. А.М. Горького',
                                                     'Проспект Ленина 5',1);
 
-insert into Library(name, address, city_id) VALUES ('Центральная городская библиотке им. А.И. Герцена',
+insert into Library(name, address, city_id) VALUES ('Центральная городская библиотеке им. А.И. Герцена',
                                                     'ул. Чапаева 5',2);
 
 insert into Library(name, address, city_id) VALUES ('Библиотека № 17',

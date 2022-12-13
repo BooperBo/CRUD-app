@@ -7,7 +7,7 @@
 <body>
 
 <div th:each="libraryList : ${library}">
-    <a th:href="@{/libraries/{id}(id=${libraryList.getId()})}"
+    <a th:action="@{/libraries/{id}(id=${libraryList.getId()})}"
        th:text="${libraryList.getName()+ ', '+ libraryList.getAddress()}">name</a>
 </div>
 

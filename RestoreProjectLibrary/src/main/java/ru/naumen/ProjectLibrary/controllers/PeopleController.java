@@ -2,7 +2,9 @@ package ru.naumen.ProjectLibrary.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -13,6 +15,7 @@ import ru.naumen.ProjectLibrary.services.PeopleService;
 import ru.naumen.ProjectLibrary.util.PersonValidator;
 
 import javax.validation.Valid;
+import java.security.Principal;
 
 @Controller
 @RequestMapping("/people")
@@ -77,6 +80,13 @@ public class PeopleController {
     public String delete(@PathVariable("id") int id) {
         peopleService.delete(id);
         return "redirect:/people";
+    }
+
+    @GetMapping("/home")
+    public String getCurrentUsername(Model model) {
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        model.addAttribute("person",auth.getPrincipal());
+        return "people/homepage";
     }
 
 

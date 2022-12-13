@@ -30,6 +30,16 @@ public class PersonDetails implements UserDetails {
         return this.person.getPassword();
     }
 
+    public int getId() {
+        return this.person.getId();
+    }
+    public int getYearOfBirth() {
+        return this.person.getYearOfBirth();
+    }
+
+    public String getRole() {
+        return this.person.getRole();
+    }
     @Override
     public String getUsername() {
         return this.person.getUsername();
