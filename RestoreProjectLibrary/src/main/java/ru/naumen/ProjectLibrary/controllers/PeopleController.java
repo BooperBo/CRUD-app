@@ -79,6 +79,13 @@ public class PeopleController {
         return "redirect:/people";
     }
 
+    @GetMapping("/home")
+    public String getCurrentUsername(Model model) {
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        model.addAttribute("person",auth.getPrincipal());
+        return "people/homepage";
+    }
+
 
     //    Должен выводить информацию о пользователе
     @GetMapping("/showUserInfo")

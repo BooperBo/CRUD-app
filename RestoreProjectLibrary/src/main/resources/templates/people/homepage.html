@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+
+
+<p th:text="${'Ваш ID: ' + person.getId()}">text</p>
+<p th:text="${'Ваш ФИО: ' + person.getUsername()}">text</p>
+<p th:text="${'Ваш год рождения: ' + person.getYearOfBirth()}">text</p>
+<p th:text="${'Ваши права: ' + person.getRole()}">text</p>
+
+<a href="/people">Посетители</a>
+<a href="/cities">Города</a>
+<a href="/books">Список книг</a>
+
+
+
+</body>
+</html>
