@@ -24,6 +24,8 @@ public class Person {
     @Column(name = "year_of_birth")
     private int yearOfBirth;
 
+    @NotEmpty(message = "Пароль не должен быть пустым")
+    @Size(min = 4, message = "Пароль должен быть от 4 символов длиной")
     @Column(name = "password")
     private String password;
 
