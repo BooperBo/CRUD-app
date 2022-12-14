@@ -9,6 +9,7 @@ import ru.naumen.ProjectLibrary.models.Person;
 import java.util.Collection;
 import java.util.Collections;
 
+// класс обёртка над Person
 public class PersonDetails implements UserDetails {
 
     private final Person person;

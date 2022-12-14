@@ -57,6 +57,7 @@ public class PeopleService {
     public Optional<Person> getFindByUsername(String username) {
         return peopleRepository.findByUsername(username);
     }
+
     public List<Book> getBooksByPersonId(int id) {
         Optional<Person> person = peopleRepository.findById(id);
 
@@ -75,8 +76,7 @@ public class PeopleService {
             });
 
             return person.get().getBooks();
-        }
-        else {
+        } else {
             return Collections.emptyList();
         }
     }

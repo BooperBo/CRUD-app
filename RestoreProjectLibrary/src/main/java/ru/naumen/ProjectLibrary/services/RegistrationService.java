@@ -9,6 +9,7 @@ import ru.naumen.ProjectLibrary.repositories.PeopleRepository;
 
 @Service
 public class RegistrationService {
+
     private final PeopleRepository peopleRepository;
     private final PasswordEncoder passwordEncoder;
 

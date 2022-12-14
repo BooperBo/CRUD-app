@@ -40,6 +40,7 @@ public class PeopleController {
         return "people/show";
     }
 
+    //    отображение страницы создания пользователя
     @GetMapping("/new")
     public String newPerson(@ModelAttribute("person") Person person) {
         return "people/new";
@@ -79,13 +80,13 @@ public class PeopleController {
         return "redirect:/people";
     }
 
+    //    Вывод аут. пользователя
     @GetMapping("/home")
     public String getCurrentUsername(Model model) {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-        model.addAttribute("person",auth.getPrincipal());
+        model.addAttribute("person", auth.getPrincipal());
         return "people/homepage";
     }
-
 
     //    Должен выводить информацию о пользователе
     @GetMapping("/showUserInfo")

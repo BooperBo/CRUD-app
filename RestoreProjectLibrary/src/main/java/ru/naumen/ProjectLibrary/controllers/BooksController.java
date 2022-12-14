@@ -25,6 +25,7 @@ public class BooksController {
         this.peopleService = peopleService;
     }
 
+    //    пагинация и сортировка
     @GetMapping()
     public String index(Model model, @RequestParam(value = "page", required = false) Integer page,
                         @RequestParam(value = "books_per_page", required = false) Integer booksPerPage,
@@ -89,12 +90,14 @@ public class BooksController {
         return "redirect:/books";
     }
 
+    //    возвращение книги
     @PatchMapping("/{id}/release")
     public String release(@PathVariable("id") int id) {
         booksService.release(id);
         return "redirect:/books/" + id;
     }
 
+    // назначение книги пользователю
     @PatchMapping("/{id}/assign")
     public String assign(@PathVariable("id") int id, @ModelAttribute("person") Person selectedPerson) {
         // У selectedPerson назначено только поле id, остальные поля - null
